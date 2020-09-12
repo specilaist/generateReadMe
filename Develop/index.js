@@ -14,7 +14,48 @@ const questions = [
             type: "input",
             message: "what would you like the title of the readMe to say?",
             name: "title"
-      }
+      },
+      {
+            type: "input",
+            message: "what would you like the title of the readMe to say?",
+            name: "description"
+      },
+      {
+            type: "input",
+            message: "what would you like the title of the readMe to say?",
+            name: "contents"
+      },
+      {
+            type: "input",
+            message: "what would you like the title of the readMe to say?",
+            name: "installation"
+      },
+      {
+            type: "input",
+            message: "what would you like the title of the readMe to say?",
+            name: "usage"
+      },
+      {
+            type: "input",
+            message: "what would you like the title of the readMe to say?",
+            name: "license"
+      },
+      {
+            type: "input",
+            message: "what would you like the title of the readMe to say?",
+            name: "contributing"
+      },
+      {
+            type: "input",
+            message: "what would you like the title of the readMe to say?",
+            name: "tests"
+      },
+      {
+            type: "input",
+            message: "what would you like the title of the readMe to say?",
+            name: "questions"
+      },
+      
 ];
 
 
