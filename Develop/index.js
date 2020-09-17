@@ -73,7 +73,7 @@ function init() {
             .prompt(questions)
             .then((answers) => {
                   console.log(answers);
-                  const queryUrl = `https://api.github.com/users/${answers.username}/repos?per_page=100`;
+                  const queryUrl = `https://api.github.com/users/${answers.username}`;
                   axios.get(queryUrl).then(function ({ data }) {
                         console.log(data);
                         let userAnswers = generateMarkdown(answers);
