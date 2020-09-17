@@ -14,8 +14,9 @@ This app uses the require function to add "Inquirer" and "Axios" into our app so
 
 ## Visuals
 
-
+![Gif of App](./Develop/assets/generateReadMe.gif)
 
 ## Links
 
-The github repo: 
+The github repo: https://github.com/specilaist/generateReadMe
+The github site: https://specilaist.github.io/generateReadMe/

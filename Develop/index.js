@@ -75,11 +75,14 @@ function init() {
                   console.log(answers);
                   const queryUrl = `https://api.github.com/users/${answers.username}`;
                   axios.get(queryUrl).then(function ({ data }) {
-                        console.log(data);
+                        console.log(data.avatar_url);
                         let userAnswers = generateMarkdown(answers);
-                        writeToFile(answers.fileName + '.md', userAnswers);
-                        fs.appendFile(data.owner.avatar_url);
+                        writeToFile(answers.fileName + '.md', userAnswers, data.avatar_url);
+                        let avatar_url = data.avatar_url;
+                        return avatar_url;
+
                   })
+                  
             })
             .catch((e) => {
                   return e;
