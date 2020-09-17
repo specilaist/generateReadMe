@@ -17,42 +17,47 @@ const questions = [
       },
       {
             type: "input",
-            message: "what would you like the title of the readMe to say?",
+            message: "What is your github Username?",
+            name: "username"
+      },
+      {
+            type: "input",
+            message: "How would you describe this app?",
             name: "description"
       },
       {
             type: "input",
-            message: "what would you like the title of the readMe to say?",
+            message: "What does it contain?",
             name: "contents"
       },
       {
             type: "input",
-            message: "what would you like the title of the readMe to say?",
+            message: "How do you install the program?",
             name: "installation"
       },
       {
             type: "input",
-            message: "what would you like the title of the readMe to say?",
+            message: "How do you use this app in the computer?",
             name: "usage"
       },
       {
             type: "input",
-            message: "what would you like the title of the readMe to say?",
+            message: "What license do you need?",
             name: "license"
       },
       {
             type: "input",
-            message: "what would you like the title of the readMe to say?",
+            message: "Who contributed to this project?",
             name: "contributing"
       },
       {
             type: "input",
-            message: "what would you like the title of the readMe to say?",
+            message: "What do you need to run tests?",
             name: "tests"
       },
       {
             type: "input",
-            message: "what would you like the title of the readMe to say?",
+            message: "Do you have any additional questions?",
             name: "questions"
       },
       
@@ -73,6 +78,7 @@ function init() {
                         console.log(data);
                         let userAnswers = generateMarkdown(answers);
                         writeToFile(answers.fileName + '.md', userAnswers);
+                        fs.appendFile(data.owner.avatar_url);
                   })
             })
             .catch((e) => {
