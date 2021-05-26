@@ -14,7 +14,7 @@ This app uses the require function to add "Inquirer" and "Axios" into our app so
 
 ## Gif of App
 
-![Gif of App](./Develop/assets/generateReadMe.gif)
+![Gif of App](./assets/generateReadMe.gif)
 
 ## Links
 
